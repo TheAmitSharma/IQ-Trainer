@@ -75,6 +75,8 @@
         android:id="@+id/sumTextView"
         android:layout_width="221dp"
         android:layout_height="33dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:layout_marginStart="21dp"
         android:layout_marginLeft="21dp"
         android:layout_marginTop="38dp"
