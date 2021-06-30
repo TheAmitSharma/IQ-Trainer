@@ -27,8 +27,8 @@
         android:id="@+id/logo_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginBottom="65dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/start_button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,7 +75,7 @@
         android:id="@+id/sumTextView"
         android:layout_width="221dp"
         android:layout_height="33dp"
-        android:textAlignment="center"
+        android:gravity="center"
         android:textColor="@color/black"
         android:layout_marginStart="21dp"
         android:layout_marginLeft="21dp"
@@ -87,4 +87,90 @@
         android:text="31 + 7"
         app:layout_constraintStart_toEndOf="@+id/timer_textview"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="311dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="73dp"
+        app:layout_constraintBottom_toTopOf="@+id/start_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="chooseAnswer"
+            android:tag="0"
+            android:text="14"
+            android:textSize="40sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:textSize="40sp"
+            android:tag="1"
+            android:gravity="center"
+            app:layout_column="1"
+            android:onClick="chooseAnswer"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="chooseAnswer"
+            android:text="14"
+            app:layout_columnWeight="1"
+            android:tag="2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            app:layout_column="0"
+            android:textSize="40sp"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:tag="3"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:onClick="chooseAnswer"
+            android:text="14"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="276dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="66dp"
+        android:textColor="@color/black"
+        android:text="Correct!!"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
